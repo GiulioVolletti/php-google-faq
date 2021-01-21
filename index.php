@@ -38,13 +38,8 @@ $faqArray = [
     <div class="container">
       <?php foreach ($faqArray as $faq) { ?>
         <div class="faq-container">
-          <?php foreach ($faq as $key => $value) { ?>
-            <?php if ($key == "question" ){ ?>
-              <h1><?= $value ?></h1>
-            <?php } elseif ($key == "answer" ){ ?>
-              <div><?= $value ?></div>
-            <?php } ?>
-          <?php } ?>
+              <h1><?= $faq["question"] ?></h1>
+              <div><?= $faq["answer"] ?></div>          
         </div>
       <?php } ?>
     </div>
